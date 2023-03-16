@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="comments">
+      <div class="comments-list">
+        <!-- Здесь будут появляться новые комментарии -->
+      </div>
+      <form id="comment-form">
+        <div class="wrapperName">
+          <label for="name">Имя:</label>
+          <input type="text" name="name" required />
+        </div>
+        <span class="error" data-error="name"></span>
+        <br />
+        <div class="wrapperName">
+          <label for="text">Текст:</label><br />
+          <textarea name="text" required></textarea>
+          <span class="error" data-error="text"></span>
+        </div>
+        <br />
+        <div class="wrapperName">
+          <label for="date">Дата:</label>
+          <input type="date" name="date" />
+        </div>
+        <br />
+        <button type="submit">Отправить</button>
+      </form>
+      <script src="./script.js"></script>
+    </div>
+  </body>
+</html>
